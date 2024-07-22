@@ -1,0 +1,60 @@
+<section>
+    <div class="containers">
+        <div class="cont_image">
+                <img src="../../../../assets/marriot/tbscy-exterior-0001-hor-feat.webp" alt="">
+
+                <div class="iamge_text">
+                    <p>WELCOME TO COURTYARD TBILISI</p>
+                    <h4>Experience our family friendly</h4>
+                    <h6>hotel rooms and junior suites</h6>
+                </div>
+        </div>
+
+        <div class="room_cont">
+
+            <div class="rooms" *ngFor="let room of hotelRooms"    >
+                <div class="image_info" [ngClass]="room.id === 10 ? 'image_info_bckColor' : ''
+                                                   || room.id === 12 ? 'image_info_bckColor' : ''
+                                                   || room.id === 14 ? 'image_info_bckColor' : '' ">
+                     <h3> {{room.name}} </h3>
+                     <h4>  </h4>
+                     <p>Lorem ipsum, dolor sit amet consectetur dolor sit amet consectetur dolor sit amet consectetur adipisicing elit. Delectus itaque nostrum sint. Doloribus autem aut, alias ad commodi omnis laboriosam!</p>
+                     <p> Maximum Guests: <strong>{{room.maximumGuests }} </strong> <i class="fa-solid fa-users"></i> </p>
+                     <div class="btn_details">
+                        <button>Reserve</button>
+                        <a routerLink="/biltmoredetails/{{room.id}}">Rooms Details</a>
+                     </div>
+                    </div>
+                <img [src]="room.images[0].source" alt="">
+            </div>
+
+        </div>
+
+
+
+        <div class="sand_water">
+
+            <div class="video">
+                <video  playsinline autoplay loop>
+                    <source src="https://symphony.cdn.tambourine.com/the-setai-miami-beach/media/thesetaimiamibeach-ourhotel-inprivacyandsplendor-video-64d25e8d8ffd2.mp4" type="video/mp4" codecs="avc1.42E01E, mp4a.40.2">
+                </video>
+
+                  <div class="video_info">
+                     <img src="../../../../assets/marriot/thesetaimiamibeach-ourhotel-inprivacyandsplendor-image-64d25f16be3ee.webp" alt="">
+                     <div class="video_info_text">
+                        <h4>Sand & Water</h4>
+                        <p>The Setai commands a fashionably serene swath of Miami Beach where you can lounge all day on white sand and gaze at an expanse of turquoise that seems to go on forever. Our guests enjoy access to daybeds and our beach service offers jet skis for rent.</p>
+                     </div>
+                  </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+

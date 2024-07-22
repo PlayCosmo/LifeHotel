@@ -1,0 +1,176 @@
+.container{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.second_page_info{
+    text-align: center;
+
+}
+.second_page_info h3{
+    font-weight: 600;
+    font-size: 35px;
+}
+.second_page_info img{
+   margin-top: 10px;
+}
+.second_page_info p{
+    margin-top: 10px;
+    color: gray;
+}
+ .room_logo{
+    width: 300px;
+    text-align: center;
+}
+
+.rooms{
+    width: 100%;
+    margin-bottom: 40px;
+}
+.rooms_detail{
+    position: relative;
+    background-color: black;
+    border-radius: 5px 5px 5px 5px;
+
+}
+
+
+.rooms_detail img{
+   border-radius: 5px;
+   border: 2px solid gray;
+   height: 420px;
+   object-fit: cover;
+   opacity: .7;
+   z-index: 222;
+   border-radius: 5px 5px 5px 5px;
+
+}
+
+
+
+
+
+.detail_info{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 200px;
+    /* background: rgba(0,0,0,0.7); */
+    color: white;
+    bottom: -130px;
+
+    transition: .6s;
+}
+.rooms_detail:hover .detail_info{
+    position: absolute;
+    bottom: 0;
+    transition: .6s;
+    /* background: rgba(0,0,0,0.5); */
+}
+
+.detail_name{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 20px 10px;
+    width: 87%;
+    border-bottom: 3px dotted green;
+}
+.detail_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100px;
+    text-align: center;
+}
+.detail_text a{
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    padding-bottom: 5px;
+    background-color: black;
+    padding: 5px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.detail_text a:hover{
+    background-color: green;
+    transition: .6s;
+}
+.detail_text p {
+    margin-top: 10px;
+}
+.detail_name h4{
+   font-weight: 500;
+   font-size: 22px;
+   font-weight: 600;
+   font-style: italic;
+}
+.detail_name h4 i{
+    font-size: 18px;
+    color: green;
+}
+.detail_name h5{
+    position: relative;
+    right: 8px;
+    font-size: 21px;
+    color: black;
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+    .rooms{
+        width: 70%;
+        margin-bottom: 40px;
+    }
+    
+}
+
+@media screen and (max-width: 669px){
+    .rooms{
+        width: 90%;
+        margin-bottom: 40px;
+    }
+
+    .detail_name{
+        padding: 0 4px 20px 4px;
+        width: 93%;
+    }
+
+    .detail_name h4{
+        font-size: 21px;
+     }
+     .detail_name h4 i{
+         font-size: 17px;
+     }
+     .detail_name h5{
+         top: 3px;
+         font-size: 19px;
+     }
+
+     .detail_text a{
+        margin-top: 6px;
+    }
+
+    .detail_text{
+        height: 150px;
+    }
+
+
+    
+.detail_info{
+
+    bottom: -170px;
+
+}
+}

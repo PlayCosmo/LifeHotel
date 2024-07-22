@@ -1,0 +1,46 @@
+<section>
+    <div class="containers">
+        <div class="cont_text">
+            <h1>Rooms & Rates</h1>
+            <h6>Home 
+                <i class="fa-solid fa-angle-right"></i>     Rooms & Rates</h6>
+        </div>
+    </div>
+
+    <div class="cont">
+        <div class="second_page_info">
+            <h3>Rooms & Rates</h3>
+            <img class="room_logo" src="../../../assets/lifeHotel/room-divider.png" alt="">
+            <p>Enjoy a Good Night's Sleep in Our Comfortable Rooms.</p>
+        </div>
+
+       <div class="cont_room" >
+
+           <div class="room" *ngFor="let room of rooms"
+           data-aos="fade-up"
+           data-aos-anchor-placement="top-bottom"           >
+
+              <h1> {{room.name}} </h1>
+              <img [src]=" room.img " alt="">
+              <p> {{room.info}} </p>
+
+              <div class="prsons">
+
+                <p> {{room.persons}} </p>
+                <p> {{room.twin}} </p>
+                <p> {{room.size}} </p>
+
+              </div>
+
+              <div class="price">
+                <h4>Starting - {{room.price + '$'}}  /days </h4>
+                <button>Viev Details</button>
+              </div>
+               
+
+           </div>
+
+       </div>
+    </div>
+</section>
+

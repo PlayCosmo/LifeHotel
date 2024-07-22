@@ -1,0 +1,114 @@
+
+<section>
+
+    <div class="containers">
+           <div class="image_cont">
+            <img src="../../../../assets/radisson/16256-114261-f72614948_3xl.avif" alt="">
+           </div>
+
+           <div  class="sec_page">
+              <div class="page_img">
+                <div class="img">
+                    <img src="../../../../assets/radisson/16256-116722-m28080806.avif" alt="">
+                    <div class="video_svg">
+                        <i class="fa-solid fa-play"></i>
+
+                    </div>
+                </div>
+                 <div class="page_text">
+                    <h2>The essence of Blu</h2>
+                    <p>The essence of Radisson Blu is reflected in every aspect of who we are and what we do. We provide unparalleled service, comfort, and style while creating meaningful and memorable experiences.</p>
+                    <p>By paying close attention to the small details that make a big difference, we inspire unforgettable experiences with every stay.</p>
+                 </div>
+              </div>
+
+              <div class="image_cont_info">
+                <h2>Feel the difference</h2>
+                <p>By paying close attention to the small details that make a big difference, we inspire unforgettable experiences with every stay.</p>
+              </div>
+           </div>
+
+
+
+     <div class="type">
+            <h3>Room Types</h3>
+            <p>Radisson Blu Iveria Hotel, Tbilisi City Centre features 236 rooms, for business or leisure travelers complete with free Wi-Fi and in-room coffee and tea facilities.
+            </p>
+        </div>
+           
+           <div class="rooms_cont">
+         
+        
+               <div class="rooms" *ngFor="let room of rooms">
+              
+                <img [src]="room.images[0].source" alt="">
+
+                <div class="rooms_info">
+                  
+                    <h4> {{room.name}} </h4>
+
+                    <p >Max Guests: <strong>{{room.maximumGuests}}</strong> <i class="fa-solid fa-users"></i>  </p>
+
+                    <div class="aminities">
+                        <p>Main amenities</p>
+                        <ul>
+                            <li> <i class="fa-solid fa-wifi"></i> </li>
+                            <li>  <i class="fa-solid fa-mug-hot"></i>  </li>
+                            <li> <i class="fa-solid fa-shower"></i>   </li>
+                            <li> <i class="fa-solid fa-print"></i>   </li>
+                            <li>  <i class="fa-solid fa-compact-disc"></i>  </li>
+                            <li>  <i class="fa-solid fa-music"></i>  </li>
+
+                        </ul>
+                    </div>
+
+                    <div class="read_more">
+                        <a routerLink="/biltmoredetails/{{room.id}}"> Read More <i class="fa-solid fa-arrow-right"></i> </a>
+
+                    </div>
+                        
+                    <div class="btn_book">
+                        <button> Book Now </button>
+                    </div> 
+                </div>
+
+               </div>
+        
+           </div>
+
+
+
+           <div class="gallery">
+
+            <div class="image_box">
+                <img src="../../../../assets/radisson/16256-146732-f73899794_3xl.avif" alt="">
+
+            </div>
+
+            <div class="image_box min_box">
+
+               <div class="min_image">
+               <img src="../../../../assets/radisson/16256-114179-f62751761_3xl.avif" alt="">
+               </div>
+
+               <div class="min_image">
+               <img src="../../../../assets/radisson/16256-113860-f67678426_3xl.avif" alt="">
+               </div>
+
+            </div>
+
+            <div class="image_box">
+                <img src="../../../../assets/radisson/16256-116474-f64513900_3xl.avif" alt="">
+
+            </div>
+
+           </div>
+    </div>
+
+
+
+
+</section>
+
+<div style="height: 10px;"></div>
+

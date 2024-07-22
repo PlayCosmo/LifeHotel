@@ -1,0 +1,168 @@
+<section>
+    <div class="containers">
+        <div class="cont_image">
+            <img src="../../../../assets/biltmore/Biltmore Tbilisi-min.png" alt="">
+
+            <div class="image_info">
+                <div class="image_box1">
+                    <div class="image_contact">
+                        <h3>Contact Us</h3>
+                        <p> <i class="fa-solid fa-location-dot"></i> {{hotelAddress}} </p>
+                        <p> <i class="fa-solid fa-phone-volume"></i> +995 32 2727272 </p>
+                        <p> <i class="fa-regular fa-envelope"></i> INFO.BHTG&#64;BILTMORECOLLECTION.COM
+                        </p>
+                        <p><i class="fa-regular fa-clock"></i> CHECK-IN: 15:00 PM - CHECKOUT: 12:00 PM </p>
+                    </div>
+                </div>
+                <div class="image_box2">
+
+                    <div class="aminities">
+                        <h3> Hotel Aminities </h3>
+
+
+                        <div class="wifi">
+                            <p> <i class="fa-solid fa-wifi"></i> WI_FI </p>
+                            <p><i class="fa-solid fa-person-swimming"></i> POOL</p>
+                            <p><i class="fa-solid fa-dumbbell"></i> GYM</p>
+                            <p><i class="fa-solid fa-utensils"></i> RESTAURANT & BAR</p>
+                            <p><i class="fa-solid fa-square-parking"></i> ON-SITE-PARKING</p>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="rooms_page">
+
+            <div class="rooms_box" *ngFor="let room of hotelRooms.rooms">
+
+                <img [src]="room.images[0].source" alt="">
+
+                <div class="rooms_info">
+                    <div class="room_price">
+                        <h4> {{room.name}} </h4>
+                        <div class="room_info_p">
+                            <p> Maximum Guests: {{room.maximumGuests}} </p>
+                            <p> From Price: <strong>{{room.pricePerNight | currency }}</strong> </p>
+                        </div>
+                        <button>Book Room</button>
+
+                    </div>
+
+                    <div class="room_sign">
+                        <a routerLink="/biltmoredetails/{{room.id}}"><i class="fa-regular fa-eye"></i> Viev Details</a>
+                        <a routerLink="/login">Sign In</a>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    
+    <div class="hotel_neighbour">
+        <div class="iframe">
+            <iframe style="width: 100%; height: 100%;" id="gmap_canvas"
+                src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+        </div>
+
+        <div class="neighbot_slider">
+
+            <h3>Hotel Neighbourhood</h3>
+
+            <owl-carousel-o [options]="customOptions">
+
+                <ng-template carouselSlide>
+
+                    <div class="slide_box">
+                        <img src="../../../../assets/biltmore/Abanotubani.jpg" alt="">
+                        <div class="slide_text">
+                            <p>ATTRACTIONS</p>
+                            <h3>The Georgian National Opera</h3>
+                            <a href="">SEE MORE</a>
+                        </div>
+                    </div>
+
+                </ng-template>
+
+
+                <ng-template carouselSlide>
+
+                    <div class="slide_box">
+                        <img src="../../../../assets/biltmore/janashia muzeum.jpg" alt="">
+
+                        <div class="slide_text">
+                            <p>ATTRACTIONS</p>
+                            <h3>The Georgian National Opera</h3>
+                            <a href="">SEE MORE</a>
+                        </div>
+                    </div>
+
+                </ng-template>
+
+                <ng-template carouselSlide>
+
+                    <div class="slide_box">
+                        <img src="../../../../assets/biltmore/Narikala Citadel.jpg" alt="">
+
+                        <div class="slide_text">
+                            <p>ATTRACTIONS</p>
+                            <h3>The Georgian National Opera</h3>
+                            <a href="">SEE MORE</a>
+                        </div>
+                    </div>
+
+                </ng-template>
+
+
+                <ng-template carouselSlide>
+
+                    <div class="slide_box">
+                        <img src="../../../../assets/biltmore/opera.jpg" alt="">
+
+                        <div class="slide_text">
+                            <p>ATTRACTIONS</p>
+                            <h3>The Georgian National Opera</h3>
+                            <a href="">SEE MORE</a>
+                        </div>
+                    </div>
+
+                </ng-template>
+
+
+
+
+                <ng-template carouselSlide>
+                    <div class="slide_box">
+                        <img src="../../../../assets/biltmore/Rustaveli Theater.jpg" alt="">
+
+                        <div class="slide_text">
+                            <p>ATTRACTIONS</p>
+                            <h3>The Georgian National Opera</h3>
+                            <a href="">SEE MORE</a>
+                        </div>
+                    </div>
+
+                </ng-template>
+
+
+
+            </owl-carousel-o>
+
+        </div>
+    </div>
+</section>
+
+
+<div style="height: 8vh;"></div>

@@ -1,0 +1,145 @@
+section{
+    width: 100%;
+    padding-bottom: 100px;
+}
+.containers{
+    width: 100%;
+    height: 65vh;
+    /* background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(../../../assets/rooms/hotel-room.jpg); */
+    background-image: url(../../../assets/rooms/hotel-room.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont_text{
+    color: white;
+    text-align: center;
+}
+.cont_text h1{
+    font-size: 60px;
+}
+.cont_text h6{
+    font-size: 19px;
+}
+
+
+.second_page_info h3{
+    font-size: 34px;
+}
+
+.cont{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    /* height: 50vh; */
+}
+.cont_room{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 100px;
+    justify-content: center;
+    margin-top: 60px;
+}
+.room{
+    width: 660px;
+    height: 500px;
+    text-align: justify;
+
+}
+.room img{
+    width: 100%;
+}
+.room h1{
+    font-size: 29px;
+}
+.room p{
+    margin-top: 10px;
+    color: gray;
+
+}
+.prsons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    color: gray;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-top: 1px solid rgb(215, 202, 202);
+    border-bottom: 1px solid rgb(215, 202, 202);
+    padding: 15px 0;
+    border-radius: unset;
+}
+.price button{
+    width: 120px;
+    height: 45px;
+    background-color: black;
+    color: white;
+
+}
+
+
+@media screen and (max-width:670px) {
+    
+
+
+    .containers{
+        height: 50vh;
+   
+    }
+
+    .cont_text h1{
+        font-size: 40px;
+    }
+
+
+    .second_page_info h3{
+        font-size: 29px;
+    }
+    .second_page_info img{
+        width: 70%;
+    }
+ 
+
+
+
+    .cont_room{
+        width: 100%;
+        row-gap: 90px;
+        margin-top: 60px;
+        
+    }
+    .room{
+        width: 96%;
+        text-align: justify;
+    
+    }
+    .room img{
+        width: 100%;
+        height: 200px;
+    }
+
+
+    .prsons{
+        flex-direction: column;
+        margin-top: 20px;
+        line-height: 4px;
+    }
+    .price{
+        margin-top: 10px;
+        padding: 15px 5px;
+
+        
+    }
+    .price h4{
+        font-size: 18px;
+    }
+}

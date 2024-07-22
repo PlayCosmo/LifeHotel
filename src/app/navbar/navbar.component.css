@@ -1,0 +1,442 @@
+.containers{
+    box-shadow: 3px 3px 33px rgb(221, 216, 216);
+    /* padding: 4px; */
+   padding-top: 50px;
+    
+}
+
+
+.logo_info .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8px;
+    cursor: pointer;
+}
+.logo_info .logo img{
+    width: 65px;
+}
+.logo_text h5{
+    color: green;
+    font-size: 25px;
+}
+.logo_text h4{
+    font-size: 23px;
+}
+
+.pages_menu{
+    display: none;
+}
+
+.mobile_logo{
+    display: none;
+}
+
+.close_mobile_page{
+    display: none;
+}
+
+.pages ul {
+   margin: 0;
+   padding: 0;
+   padding: 19px 10px 0 ;
+}
+.pages ul li{
+    display: inline-block;
+    margin-left: 29px;
+    z-index: 6;
+    
+
+}
+.pages ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    position: relative;
+    cursor: pointer;
+}
+.pages ul li a::after{
+   content: '';
+   position: absolute;
+   bottom: -7px;
+   left: 0;
+   width: 0;
+   height: 1px;
+   background-color: black;
+   transition: .6s;
+}
+.pages ul li a:hover:after{
+    width: 100%;
+}
+
+.fa-chevron-down{
+    font-size: 17px;
+}
+.rooms{
+    position: relative;
+    cursor: pointer;
+    height: 58px;
+}
+.rooms i{
+    position: relative;
+    left: 4;
+}
+
+.details{
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    width: 140px;
+    box-shadow: 2px 2px 5px gray;
+    background-color: aliceblue;
+    padding: 10px 12px;
+    transition: .7s;
+    
+}
+.details:hover{
+    background-color: rgb(63, 185, 91);
+}
+.details p{
+    margin: 0;
+}
+
+
+
+
+.menu_book{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+}
+
+
+.menu_book .drop_menu{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+.drop_menu:hover{
+    color: #61F247;
+    transition: .6s;
+    border: none;
+    /* background-color: rgb(213, 208, 208); */
+}
+.menu_book button{
+    background-color: black;
+    color: white;
+    padding: 9px 40px;
+    height: 45px;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    /* gap: 20px; */
+    justify-content: space-evenly;
+}
+.menu_book button:hover{
+    background-color: rgb(63, 185, 91);
+   color: black;
+    transition: .6s;
+}
+
+
+.drop_page{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  transition: 1s;
+  display: flex;
+  z-index: 1225;
+}
+.drop_page_full{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    transition: 1.5s;
+
+    animation: dropshow 1s ease;
+}
+
+@keyframes dropshow {
+    0%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 0.4;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.lif_hotel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lif_hotel img{
+    width: 120px;
+}
+.lif_hotel .life_txt{
+    text-align: justify;
+}
+.life_txt h4, h5{
+    font-size: 45px;
+    color: white;
+}
+.life_txt h4{
+    color: rgb(96, 87, 87);
+    font-size: 55px;
+    font-style: italic;
+}
+.globally{
+    font-size: 17px;
+    color: rgb(224, 212, 212) ;
+    width: 380px;
+    padding: 12px 10px 0px 65px;
+}
+
+.close ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.close ul li{
+    display: inline-block;
+    margin-left: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid white;
+    
+    transition: .6s;
+
+}
+.close ul li:hover{
+background-color: rgb(151, 238, 128);
+}
+.close ul li a{
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.left_side{
+    width: 70%;
+    height: 100%;
+    background:rgba(0,0,0,0.6);
+
+}
+.right_side{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    background-color: #111E30;
+}
+
+
+
+
+
+@media screen and (max-width: 1300px ) {
+  
+    .menu_book{
+        justify-content: center;
+    }
+    .menu_book button{
+        display: block;
+    }
+}
+@media screen and (max-width: 1100px ) {
+
+    .pages ul{
+        width: 600px;
+        text-align: end;
+        padding-right: 0px;
+    }
+
+    .pages ul li{
+        display: inline-block;
+        margin-left: 29px;
+        
+        
+    }
+  .row{
+    display: flex;
+    justify-content: start;
+    
+  }
+    .menu_book{
+        display: none;
+    }
+
+   
+
+}
+
+@media screen and (max-width: 880px ) {
+
+ 
+
+    .pages ul{
+        text-align: center;
+        padding-right: 50px;
+    }
+
+ 
+
+   .logo_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+   }
+   .logo_info .logo{
+    justify-content: start;
+}
+
+
+}
+
+@media screen and (max-width: 767px ) {
+
+
+   
+
+.mobile_logo{
+    height: 120px;
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(214, 231, 246);
+}
+.mobile_logo img{
+    width: 75px;
+}
+.logo_mobile_text{
+    padding-right: 10px;
+}
+.logo_mobile_text h4{
+   font-size: 24px;
+}
+.logo_mobile_text h5{
+   font-size: 27px;
+   color: green;
+}
+.pages{
+   
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 111;
+    left: -100%;
+    /* left: 0; */
+    top: 49px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    /* background-color: white; */
+    background: rgba(0,0,0,0.5);
+    padding: 0;
+    margin: 0;
+    opacity: 0.1;
+    transition: .8s;
+}
+.close_mobile_page{
+    display: block;
+    position: absolute;
+    right: 0;
+    font-size: 30px;
+    width: 45%;
+    height: 100%;
+    
+    
+}
+.close_mobile_page i{
+    position: relative;
+    top: 20px;
+    right: -35px;
+    color: white;
+    cursor: pointer;
+}
+       .pages ul {
+
+        margin: 0;
+        padding: 0;
+        padding:  0 ;
+        left: 0;
+        width: 55%;
+        height: 100%;
+        text-align: justify;
+        background-color: white;
+        z-index: 22;
+
+
+     }
+
+     .pages_open{
+        left: 0;
+        transition: .8s;
+        opacity: 1;
+     }
+     .pages ul li{
+         display: block;
+         margin-top: 22px;
+         z-index: 6;
+         padding-left: 30px;
+  
+          text-shadow: 2px 3px 5px rgb(141, 136, 136);
+     
+     }
+
+ 
+   
+
+
+
+
+     .rooms{
+      
+        height: 27px;
+    }
+    .rooms span{
+        display: none;
+    }
+
+     .details{
+        display: none;
+
+}
+
+
+
+
+
+
+    .pages_menu{
+        display: block;
+        font-size: 32px;
+        cursor: pointer;
+        padding: 6px;
+       }
+
+}

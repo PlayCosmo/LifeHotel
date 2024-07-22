@@ -1,0 +1,244 @@
+section{
+    width: 100%;
+    
+}
+
+.containers{
+    background-image: url(../../../assets/restaurant/restaurant.jpg);
+    height: 350px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cont_text{
+    color: white;
+    text-align: center;
+}
+.cont_text h1{
+    font-size: 60px;
+}
+.cont_text p{
+    font-size: 19px;
+}
+
+
+.breakfast{
+    text-align: center;
+    width: 95%;
+    margin: 60px auto;
+}
+.second_page_info h3{
+    font-size: 40px;
+}
+.second_page_info p{
+    font-size: 19px;
+}
+.breakfast_food{
+    
+    width: 100%;
+
+    height: 765px;
+
+    overflow: hidden;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.breakfast_food_show{
+    overflow: visible;
+    height: unset;
+}
+.breakfast_food_hide{
+    overflow: hidden;
+    height: 745px;
+
+}
+
+.food{
+    width: 45%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+.food img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    box-shadow: 2px 4px 12px gold;
+
+}
+.info{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.price{
+    color: #FBAF32;
+}
+.dots{
+    width: 180px;
+    border: none;
+    border-bottom: 2px dotted rgb(190, 183, 183);
+    position: relative;
+    bottom: 8px;
+}
+.info p{
+    width: 70%;
+}
+.info h5{
+    display: flex;
+}
+.info h2{
+    font-size: 26px;
+}
+
+
+.show a{
+  font-size: 21px;
+  border-bottom: 1px solid gray;
+  padding-bottom: 2px ;
+  cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width:1400px) {
+    
+    .breakfast_food{
+    
+    
+        height: unset;
+        
+    
+      
+
+       flex-direction: column;
+
+        flex-wrap: unset;
+        gap: 2px;
+    
+    }
+
+
+
+    .food{
+        width: 90%;
+        height: 180px;
+        justify-content: center;
+        gap: 20px;
+        
+    }
+
+    .info{
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+  
+    .dots{
+        width: 45%;
+    
+    }
+
+
+    .show{
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width:670px){
+
+    .cont_text h1{
+        font-size: 45px;
+        font-weight: 400;
+    }
+    .cont_text p{
+        font-size: 17px;
+    }
+
+
+
+    .second_page_info h3{
+        font-size: 28px;
+    }
+    .second_page_info p{
+        font-size: 17px;
+    }
+    .room_logo{
+        width: 70%;
+    }
+
+
+
+
+
+
+    .breakfast_food{
+    
+    
+    
+        overflow: visible;
+    
+        padding-top: 20px;
+        padding-bottom: 40px;
+
+        flex-direction: column;
+        flex-wrap: unset;
+
+    }
+
+ 
+    
+    .food{
+        width: 99%;
+        height: 160px;
+        justify-content: center;  
+        
+    }
+    .food img{
+        width: 90px;
+        height: 90px;
+    }
+    .info{
+      
+        justify-content: center;
+       padding-top: 30px;
+    }
+
+    .dots{
+        width: 20px;
+
+    
+    }
+    .info p{
+        width: 90%;
+        font-size: 15px;
+    }
+    .info h5{
+        font-size: 17px;
+    }
+    .info h2{
+        font-size: 16px;
+    }
+
+}

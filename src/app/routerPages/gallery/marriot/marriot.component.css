@@ -1,0 +1,454 @@
+section{
+    width: 100%;
+
+}
+
+.containers{
+   width: 100%;
+}
+
+.cont_image{
+   text-align: center;
+}
+.cont_image img{
+   width: 100%;
+   height: 500px;
+   object-fit: cover;
+}
+.iamge_text{
+   margin-top: 40px;
+}
+.iamge_text h4{
+   font-size: 50px;
+}
+.iamge_text h6{
+   font-size: 35px;
+}
+
+
+.room_cont{
+
+width: 100%;
+padding: 40px;
+margin: 30px auto;
+
+display: flex;
+flex-direction: column;
+gap: 30px;
+align-items: center;
+
+}
+
+.rooms{
+ display: flex;
+ width: 100%;
+
+ padding: 30px;
+   
+}
+.image_info{
+    width: 45%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    padding: 0 5px 0 60px;
+}
+
+.image_info_bckColor{
+  background-color: #e9e4e4;
+  order: 2;
+}
+
+.rooms img{
+   width: 55%;
+   height: 500px;
+   
+}
+
+
+
+.image_info p {
+   width: 80%;
+}
+.image_info p strong{
+   font-size: 19px;
+   margin-left: 6px;
+   margin-right: 5px;
+}
+.btn_details button{
+  width: 150px;
+  height: 45px;
+  font-size: 18px;
+  border: none;
+  background-color: white;
+  border: 1px solid black;
+
+  transition: .6s;
+
+
+}
+.btn_details button:hover{
+   background-color: black;
+   color: white;
+   transition: .6s;
+}
+
+.btn_details a{
+   text-decoration: none;
+   color: green;
+   margin-left: 60px;
+   border-bottom: 2px solid green;
+   padding-bottom: 3px;
+   
+}
+
+
+
+.sand_water{
+   width: 95%;
+   margin: 0 auto;
+   background-color: #E9E4E4;
+   padding: 40px;
+}
+
+.video{
+   display: flex;
+   justify-content: space-evenly ;
+   gap: 30px;
+}
+
+
+.video video{
+   height: 700px;
+}
+
+.video_info{
+
+   text-align: end;
+
+}
+.video_info img{
+   width: 90%;
+   height: 400px;
+   object-fit: cover;
+}
+.video_info_text{
+   width: 100%;
+   height: 250px;
+   text-align: justify;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+
+   padding: 0 60px;
+}
+
+.video_info_text h4{
+   font-size: 40px;
+   font-weight: 400;
+   margin-bottom: 15px;
+   border-bottom: 1px solid gray;
+   padding-bottom: 8px;
+}
+
+
+
+@media screen and (max-width : 1150px) {
+
+
+
+
+
+   .iamge_text h4{
+      font-size: 36px;
+   }
+   .iamge_text h6{
+      font-size: 25px;
+   }
+
+
+
+
+
+
+   .room_cont{
+
+      padding: 20px;
+   
+      }
+      
+      .rooms{
+       padding: 20px;
+         
+      }
+      .image_info{
+    
+          padding: 0 5px 0 50px;
+      }
+      
+   
+   
+ 
+
+      
+      .btn_details a{
+       
+         margin-left: 50px;
+       
+         
+      }
+
+
+
+
+      
+      .video{
+       
+         gap: 20px;
+      }
+      
+      
+      .video video{
+         height: 600px;
+      }
+      
+
+      .video_info img{
+         height: 370px;
+         
+      }
+      .video_info_text{
+  
+      
+         padding: 0 40px;
+      }
+      
+      .video_info_text h4{
+         font-size: 32px;
+      
+      }
+      
+      
+      
+     
+}
+
+
+@media screen and (max-width : 950px){
+
+
+   .cont_image img{
+      height: 450px;
+   }
+
+   .iamge_text h4{
+      font-size: 35px;
+   }
+   .iamge_text h6{
+      font-size: 25px;
+   }
+   
+   
+   /* .room_cont{
+   
+   width: 100%;
+   padding: 40px;
+   margin: 30px auto;
+   
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   align-items: center;
+   
+   } */
+   
+   .rooms{
+
+    flex-direction: column;
+    align-items: center;
+
+         
+   }
+   .image_info{
+       width: 100%;
+       order: 2;
+       height: 300px;
+
+       display: flex;
+       flex-direction: column;
+       gap: 5px;
+       justify-content: center;
+       padding: 0 5px 0 80px;
+   }
+   
+   .image_info_bckColor{
+     background-color: #e9e4e4;
+     order: 2;
+   }
+   
+   .rooms img{
+      width: 90%;
+      height: 350px;
+      
+   }
+   
+   
+   
+   .image_info p {
+      width: 85%;
+   }
+
+
+
+   .btn_details a{
+   
+      margin-left: 90px;
+   
+   
+   }
+
+
+
+   .sand_water{
+      
+      background-color: unset;
+     
+   }
+
+   
+   .video{
+      display: flex;
+      flex-direction: column;
+   }
+   
+   
+   .video video{
+      height: 600px;
+   }
+   
+   .video_info{
+   
+      text-align: center;
+   
+   }
+   .video_info img{
+      width: 100%;
+   }
+   .video_info_text{
+      width: 100%;
+      height: 230px;
+   
+   }
+   
+   .video_info_text h4{
+      font-size: 32px;
+
+   }
+   
+
+}
+
+@media screen and (max-width : 670px){
+
+
+
+   .cont_image img{
+      height: 420px;
+   }
+
+   .iamge_text h4{
+      font-size: 24px;
+   }
+   .iamge_text h6{
+      font-size: 19px;
+   }
+   
+   
+   .room_cont{
+   
+   padding: 20px;
+ 
+   gap: 30px;
+
+   }
+   
+   .rooms{
+
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 5px;
+         
+   }
+   .image_info{
+      
+       height: 340px;
+
+       gap: 1px;
+       
+       padding: 0 5px 0 30px;
+   }
+   
+
+   
+   .rooms img{
+      width: 100%;
+      height: 350px;
+      
+   }
+   
+   
+   
+   .image_info p {
+      width: 97%;
+   }
+
+
+
+   .btn_details a{
+   
+      margin-left: 25px;
+   
+   
+   }
+
+
+
+   .sand_water{
+      
+      background-color: unset;
+      padding: 10px;
+     
+   }
+
+   
+   .video{
+      display: flex;
+      flex-direction: column;
+   }
+   
+   
+   .video video{
+      height: 470px;
+   }
+   
+
+   .video_info_text{
+      height: 340px;
+      padding: 0px 15px;
+      
+   }
+   
+   .video_info_text h4{
+      font-size: 29px;
+
+   }
+
+
+
+
+
+   
+
+}

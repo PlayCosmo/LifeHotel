@@ -1,0 +1,70 @@
+<section>
+
+
+    <div class="container">
+
+        <div *ngIf="hideRoomsDetail" class=" rooms ">
+   
+             <div class="rooms_image">
+                <div class="img" (click)="zoomIn()" >
+                    <img [src]=" roomsImage[ind].source " alt="">
+
+                </div>
+                <div class="count">
+                    <button (click)="prev()" > <i class="fa-solid fa-caret-left"></i> </button>
+                    <span> {{ind+1}} / {{roomsImage.length}} </span>
+                    <button (click)="next()"> <i class="fa-solid fa-caret-right"></i> </button>
+                </div>
+               
+             </div>
+
+             <div class="rooms_details">
+
+                 <div class="details_info">
+                    <h3> {{eachRooms.name}} </h3>
+                    <p class="guest">Guests: <strong> {{eachRooms.maximumGuests}} </strong> <i class="fa-solid fa-users"></i></p>
+                    <p class="lorem">Lorem ipsum dolor o nam quisquam hic? Eius cum nemo eligendi non dolore. consectetur adipisicing elit. Ex, reiciendis!</p>
+                    <p class="price">Price: <strong> {{eachRooms.pricePerNight | currency}} </strong> </p>
+
+                    <ul>
+                        <li> Amenities</li>
+                        <li> <i class="fa-solid fa-wifi"></i> </li>
+                        <li>  <i class="fa-solid fa-mug-hot"></i>  </li>
+                        <li> <i class="fa-solid fa-shower"></i>   </li>
+                        <li> <i class="fa-solid fa-print"></i>   </li>
+                        <li>  <i class="fa-solid fa-music"></i>  </li>
+                    </ul>
+
+
+                 </div>
+
+                 <div class="book">
+                    <button>Book Now</button>
+                 </div>
+
+             </div>
+       
+
+
+        </div>
+
+    </div>
+
+
+    <div *ngIf="zoomShow" class="zoom_image">
+        <img [src]=" roomsImage[ind].source " alt="">
+
+        <div class="close" (click)="closeZoom()"> <i class="fa-solid fa-x"></i> </div>
+        <div class="arrows">
+            <button (click)="prev()"> <i class="fa-solid fa-arrow-left"></i> </button>
+            <button (click)="next()"> <i class="fa-solid fa-arrow-right"></i> </button>
+
+        </div>
+        <div class="counter">
+            <span> {{ind+1}}/{{roomsImage.length}} </span>
+        </div>
+    </div>
+
+</section>
+
+

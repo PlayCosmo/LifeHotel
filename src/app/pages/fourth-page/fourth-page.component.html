@@ -1,0 +1,70 @@
+<section>
+    <div class="container">
+        
+        <div class="switch">
+            <button (click)=" tab = 'about' "   [ngClass]=" tab === 'about' || tab != 'mission' && tab != 'values' && tab != 'vision' ? 'active' : '' " >About Us</button>
+            <button (click)=" tab = 'mission'"  [ngClass]=" tab === 'mission' ? 'active' : '' " >Our Mission</button>
+            <button (click)="tab = 'vision' "   [ngClass]=" tab === 'vision' ? 'active' : '' "  >Our Vision</button>
+            <button (click)="tab = 'values' "   [ngClass]=" tab === 'values' ? 'active' : '' " >Our Values</button>
+        </div>
+
+        <div class="siwtch_info" [ngSwitch]="tab" >
+  
+             <div class="box1" *ngSwitchDefault 
+              data-aos="flip-down">
+                <img src="../../../assets/fourthPage/about-us1.jpg" alt="">
+                 <div class="box_text">
+                     <h4>About Us</h4>
+                    <p> Customer satisfaction is among our priorities for us. We ellat vero laboriosam. </p>
+                    <p>Stay where you want, when you want and be rewarded. With just a few clicks, it offers the ability to compare hotel prices across hundreds of booking sites, covyear we help millions of guests compare hotel and accommodation deals.</p>
+                    <a>Read More</a>
+ 
+                </div>
+             </div>
+
+             <div class="box1" *ngSwitchCase=" 'mission' ">
+                <img src="../../../assets/fourthPage/about-us2.jpg" alt="">
+
+                <div class="box_text">
+                    <h4>Our Mission</h4>
+
+                    <p> Customer satisfaction is among our priorities for us. We  rar we help millions of guests compare hotel and accommodation deals.</p>
+                    <p> Customer satisfaction is among our priorities for us. We  rar we help millions of guests compare hotel and accommodation deals.</p>
+
+                    <a>Read More</a>
+
+                 </div>
+             </div>
+
+             <div class="box1" *ngSwitchCase="'vision'">
+                <img src="../../../assets/fourthPage/about-us3.jpg" alt="">
+                <div class="box_text">
+                    <h4>Our Vision</h4>
+
+                    <p> Customer satisfaction is among our priorities for us. psum dolor sit amet consectetur adipisicing elit. io maxime expedita repellat vero laboriosam. </p>
+                    <p>Stay where you want, t a few clicks, it offers the ability to compare hotel prices across hundreds of booking sites, Every year we help millions of guests compare hotel and accommodation deals.</p>
+                    <a>Read More</a>
+
+                </div>
+             </div>
+
+             <div class="box1"  *ngSwitchCase=" 'values' ">
+                <img src="../../../assets/fourthPage/about-us4.jpg" alt="">
+                <div class="box_text">
+
+                    <h4>Our values</h4>
+
+                    <p> Customer satisfaction is among our priorities for uss. vero laboriosam. </p>
+                    <p>Stay where you want, when a few clicks, it offers the ability to compare hotel prices across hundreds Every year we help millions of guests compare hotel and accommodation deals.</p>
+                    <a>Read More</a>
+ 
+                </div>
+             </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+

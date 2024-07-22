@@ -1,0 +1,47 @@
+<section>
+
+ 
+    <div class="container">
+
+
+
+            <div class="second_page_info">
+                <h3>Rooms & Rates</h3>
+                <img class="room_logo" src="../../../assets/lifeHotel/room-divider.png" alt="">
+                <p>Enjoy a Good Night's Sleep in Our Comfortable Rooms.</p>
+            </div>
+
+             <div class="rooms">
+
+                <owl-carousel-o [options]="customOptions">
+                    <ng-template *ngFor="let room of images" carouselSlide> 
+                        <!-- <ng-template *ngFor="let room of images" carouselSlide>  -->
+
+                        <div   class="rooms_detail">
+                            <!-- <img [src]=" room.img " alt=""> -->
+                            <img  [src]=" room.img " alt="">   
+                            <div class="detail_info">
+                                <div class="detail_name">
+                                    <h4> {{room.name}} <i class="fa-solid fa-arrow-down"></i> </h4>
+                                    <h5> {{room.price}} $ /days </h5>
+                                </div>
+                                <div class="detail_text">
+                                    <a routerLink="/biltmoredetails/{{room}}">Details</a>
+                                    <p> dolor sit amet Lorem ipsum dolor sit. Lorem ipsum dolor sit amet. consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </ng-template>  
+                
+
+                  </owl-carousel-o>
+
+             </div>
+
+         </div>
+
+</section>
+
+
+

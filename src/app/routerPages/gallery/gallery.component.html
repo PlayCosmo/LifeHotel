@@ -1,0 +1,26 @@
+<section>
+    <div class="containers">
+
+        <owl-carousel-o [options]="customOptions" >
+            <ng-template carouselSlide *ngFor="let hotels of allHotels">
+               <div class="hotels">
+                <img [src]="hotels.featuredImage" alt="">
+          <div class="address">
+            <h1 class="hotel_name"> {{hotels.name}} </h1>
+
+            <h3> {{hotels.city}} </h3>
+            <h6> {{hotels.address}} </h6>
+
+          </div>
+
+          <!-- routerLink="/biltmore/{{hotels.id}}" -->
+          <button 
+            (click)="gotoHotelsDetails(hotels.id)"
+          >Details <i class="fa-solid fa-arrow-right"></i></button>
+               </div>
+            </ng-template>  
+            
+          </owl-carousel-o>
+
+    </div>
+</section>

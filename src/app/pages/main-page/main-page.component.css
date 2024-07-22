@@ -1,0 +1,137 @@
+.carousel-item{
+    width: 100%;
+    height: 82vh;
+    
+}
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel-caption{
+    color: white;
+    top: 150px;
+}
+.carousel-caption h5{
+font-size: 35px;
+}
+.carousel-caption h2{
+    font-size: 70px;
+    font-weight: bold;
+}
+.carousel-caption p{
+    font-size: 19px;
+    margin-top: 20px;
+}
+.carousel-caption button{
+   width: 180px;
+   height: 60px;
+   margin-top: 20px;
+   border: none;
+   background: transparent;
+   border: 2px solid  white;
+   color: white;
+   border-radius: 50px;
+   font-size: 21px;
+}
+.carousel-caption button:hover{
+    background-color: rgb(63, 185, 91);
+    transition: .6s;
+    color: black;
+
+}
+.carousel-caption button i{
+    position: relative;
+    top: 2px;
+}
+
+.carousel-indicators button{
+  padding: 1px 3px;
+
+  
+}
+.carousel-indicators .active{
+    padding: 1px 12px;
+    background-color: rgb(63, 185, 91);
+}
+.carousel-control-prev,
+.carousel-control-next{
+    /* background-color: white; */
+    border: 2px solid white;
+    opacity: 1;
+    width: 55px;
+    border-radius: 50%;
+    height: 55px;
+    top: 40%;
+    margin: 0 30px;
+    
+}
+
+.carousel-control-prev:hover{
+    background-color: rgb(63, 185, 91);
+    transition: .6s;
+
+}
+.carousel-control-next:hover{
+    background-color: rgb(63, 185, 91);
+    transition: .6s;
+
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    color: white !important;
+    filter: unset ;
+}
+
+
+@media screen and (max-width: 1050px ) {
+    .carousel-item{
+        height: 72vh;
+        
+    }
+
+    
+}
+@media screen and (max-width: 670px ) {
+   
+
+    .carousel-item{
+        height: 67vh;
+        
+    }
+    .carousel-control-prev,
+.carousel-control-next{
+ 
+    
+    visibility: hidden;
+}
+.carousel-caption {
+    display: block;
+    
+
+}
+
+
+
+.carousel-caption{
+    top: 60px;
+}
+
+.carousel-caption h5{
+    font-size: 25px;
+    }
+    .carousel-caption h2{
+        font-size: 50px;
+    }
+    .carousel-caption p{
+        font-size: 17px;
+    }
+    .carousel-caption button{
+       width: 170px;
+       height: 53px;
+       margin-top: 15px;
+   
+    }
+}

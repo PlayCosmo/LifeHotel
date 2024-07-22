@@ -1,0 +1,112 @@
+<div class="containers">
+    <div class="row">
+
+        <div class="col-md-3 logo_info ">
+            <div class="logo">
+                <img src="../../assets/lifeHotel/loader.png" alt="">
+                <div routerLink="load" class="logo_text">
+                    <h4>LIFE</h4>
+                    <h5>HOTEL</h5>
+                </div>
+            </div>
+            <div (click)="openPage()" *ngIf="menuBar" class="pages_menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+  
+
+        <div class="col-md-6 pages text-center"  [class.pages_open]="pageOpen">
+            <div class="mobile_logo">
+                <img src="../../assets/lifeHotel/loader.png" alt="">
+                <div class="logo_mobile_text">
+                    <h4>LIFE</h4>
+                    <h5>HOTEL</h5>
+                </div>
+            </div>
+            <div class="close_mobile_page" (click)="closPage()">
+                <i class="fa-solid fa-x"></i>
+            </div>
+            <ul>
+
+
+
+                <li (click)="closPage()" routerLink="/"><a>Home</a></li>
+                <li (click)="closPage()" routerLink="/gallery"><a>Hotels</a></li>
+
+                <!-- <li><a>About Us</a></li> -->
+                <li (click)="closPage()"  routerLink="/rooms" (mouseover)="show()" (mouseleave)="hide()" class="rooms"><a >Rooms <span><i class="fa-solid fa-chevron-down"></i></span>
+                </a>
+                 <div routerLink="/roomsgallery"  *ngIf="hideShow" class="details">
+                    <p>Rooms Gallery</p>
+                 </div>
+                </li>
+                <li (click)="closPage()" routerLink="/restaurant"><a>Restaurant</a></li>
+                <li (click)="closPage()" routerLink="/contact"><a>Contact</a></li>
+
+            </ul>
+
+          
+        </div>
+
+        <div class="col-md-3 menu_book">
+            <div (click)="dropOpen()" class="drop_menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <button  (click)="goToLogin()" *ngIf="!login"> Logg In </button>
+            <button  (click)="logOff()" *ngIf="login"> Logg Off  <span> I </span> </button>
+            <!-- <button *ngIf="login"> Logg Off </button> -->
+        </div>
+
+
+   
+
+    </div>
+
+
+
+   
+    <div class="drop_page" [ngClass]="!dropShow ? 'drop_page' : 'drop_page_full' ">
+
+
+        <div class="left_side" (click)="dropClose()">
+
+
+        </div>
+
+        <div class="right_side">
+        <div class="close" >
+
+            <div class="lif_hotel">
+                <img src="../../assets/lifeHotel/loader.png" alt="">
+                <div class="life_txt">
+                    <h4>LIFE</h4>
+                    <h5>HOTEL</h5>
+                </div>
+            </div>
+            <p class="globally" >Globally communicate adaptive e-markets & timely manufactured product. Objectively exploit collaborative</p>
+
+            <ul>
+                <li><a><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a><i class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>
+
+        </div>
+
+        </div>
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+

@@ -1,0 +1,97 @@
+<section>
+
+
+
+<div class="container" [ngClass]="turnSign ? 'right-panel-active' : '' " id="container">
+	<div class="form-container sign-up-container">
+		<form #authForm="ngForm" >
+			<h1>Create Account</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or use your email for registration</span>
+			<input type="text" 
+			name="name" 
+			[(ngModel)]="signUpObj.name" 
+			placeholder="Name"
+			required 
+			/>
+
+
+			<input type="email" 
+			name="email" 
+			[(ngModel)]="signUpObj.email" 
+			 placeholder="@Email " 
+			 required
+			 email
+			 
+			 />
+
+
+
+			<input type="password"
+			 name="password"
+			  [(ngModel)]="signUpObj.password" 
+			   placeholder="Password min-8"
+			   required
+			   minlength="8"
+			   />
+
+			   <button  [disabled]="authForm.invalid " [ngClass]=" authForm.invalid ? 'signInvalid' : '' " (click)="onRegister()">Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Sign in</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or use your account</span>
+			<input type="email"
+			 name="email" 
+			 [(ngModel)]="loginObj.email"
+			  placeholder="Email" 
+			  />
+
+			<input type="password"
+			 name="password"
+			  [(ngModel)]="loginObj.password"
+			   placeholder="Password" 
+			   
+			   />
+
+			<a href="#">Forgot your password?</a>
+			<button  (click)="onLogin()">Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1 class="hello">Welcome Back!</h1>
+				<p class="hello">To keep connected with us please login with your personal info</p>
+				<button  (click)="turnSign = false " *ngIf="turnSign" class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1 class="hello">Hello, Friend!</h1>
+				<p class="hello">Enter your personal details and start journey with us</p>
+				<button (click)="turnSign = true " *ngIf="!turnSign" class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</section>

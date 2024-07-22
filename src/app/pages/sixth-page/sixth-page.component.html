@@ -1,0 +1,54 @@
+<section>
+    <div class="containers">
+        <div class="cont_image">
+            <img src="../../../assets/fifthPage/faq1.jpg" alt="">
+        </div>
+
+
+        <div class="cont_info">
+
+            <div class="cont_text">
+                <h2> <span>Hospitality Hub:</span> Your Hotel FAQs </h2>
+                <p>Welcome to Hospitality Hub, your comprehensive resource for all inquiries related to hotels and accommodations.</p>
+            </div>
+
+
+            <div class="box"> 
+                
+                <h5 (click)="showDrop() ">Booking Bliss <span> {{textShow ? '-' : '+' }}  </span></h5>
+
+                <span *ngIf="textShow" >Discover insider tips for booking the perfect hotel stay. From leveraging online booking platforms.</span>
+
+            </div>
+
+            <div class="box"> 
+                <h5 (click)="showDrop1()" >Maximizing Comfort and Convenience <span> {{textShow2 ? '-' : '+' }}   </span></h5>
+
+                <span *ngIf="textShow2" >Ensure a comfortable and seamless hotel experience with expert tips for optimizing your room.</span>
+
+            </div>
+
+            <div class="box"> 
+                <h5 (click)="showDrop3()">Providing Exceptional Guest Service  <span>{{textShow3 ? '-' : '+' }}   </span> </h5>
+
+                <span *ngIf="textShow3">Learn about the art of hospitality and delivering exceptional guest service. Explore best practices for hotel staff.</span>
+
+            </div>
+
+            <div class="box"> 
+                <h5 (click)="showDrop4()">Prioritizing Guest Well-being <span> {{textShow4 ? '-' : '+' }}   </span></h5>
+
+                <span *ngIf="textShow4">Prioritize guest safety and security with robust protocols and procedures. Discover measures such as enhanced cleaning practices, 24/7 surveillance.</span>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+</section>
+
+
+
+<div style="height: 10vh;"></div>

@@ -1,0 +1,42 @@
+<section>
+     <div class="containers">
+        <div class="cont_text">
+            <h1>Restaurant</h1>
+            <p>Home
+                Restaurant  
+                <i class="fa-solid fa-arrow-right"></i>
+            </p>
+        </div>
+     </div>
+
+
+     <div class="breakfast">
+        <div class="second_page_info">
+            <h3>Delicious Food Menu</h3>
+            <img class="room_logo" src="../../../assets/lifeHotel/room-divider.png" alt="">
+            <p>11h00 Am 2h00 Pm</p>
+        </div>
+        <div class="breakfast_food" [ngClass]=" showFood ? 'breakfast_food_show' : 'breakfast_food_hide' " >
+
+             <div class="food" *ngFor="let food of allFoods">
+                <img [src]="food.image" alt="">
+                <div class="info">
+                  <h5> {{food.name}} <div class="dots"></div>  <span class="price">{{food.price | currency}} </span> </h5>
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, autem. </p>
+                  
+                </div>
+             </div>
+
+        </div>
+  
+           <div (click)="showMore()" *ngIf="hrefHide" class="show">
+            <a>Show More  <i class="fa-solid fa-chevron-down"></i></a>
+           </div>
+
+     </div>
+
+
+
+     
+
+</section>
