@@ -54,7 +54,9 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
             <button  (click)="goToLogin()" *ngIf="!login"> Logg In </button>
-            <button  (click)="logOff()" *ngIf="login"> Logg Off  <span> I </span> </button>
+            <button   *ngIf="login"> Logg Off  <span> I </span> </button>
+            <!-- (click)="logOff()" -->
+           
             <!-- <button *ngIf="login"> Logg Off </button> -->
         </div>
 

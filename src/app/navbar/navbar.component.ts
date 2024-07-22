@@ -18,35 +18,35 @@ export class NavbarComponent implements OnInit{
   logeddUser: any
   login!:boolean;
   ngOnInit(): void {
-    const localUSer = localStorage.getItem('loggedUser')
-    if(localUSer != null){
-      this.logeddUser = JSON.parse(localUSer)
+    // const localUSer = localStorage.getItem('loggedUser')
+    // if(localUSer != null){
+    //   this.logeddUser = JSON.parse(localUSer)
       
       
       
-    }
+    // }
 
-    this.getChangeLog()
+    // this.getChangeLog()
 
   }
 
-  getChangeLog(){
-    this.appService.sendBoolean.subscribe(data =>{
-      this.login = data
+  // getChangeLog(){
+  //   this.appService.sendBoolean.subscribe(data =>{
+  //     this.login = data
 
 
       
-    })
-  }
+  //   })
+  // }
 
 
 
-  logOff(){
+  // logOff(){
     
-    localStorage.removeItem('loggedUser')
-    this.router.navigateByUrl('/')
-    this.login = false
-  }
+  //   localStorage.removeItem('loggedUser')
+  //   this.router.navigateByUrl('/')
+  //   this.login = false
+  // }
 
   goToLogin(){
     this.router.navigateByUrl('/login')
